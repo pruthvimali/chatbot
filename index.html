@@ -1,0 +1,76 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+
+    <link rel="stylesheet" href="style.css">
+    <script>
+        know ={
+
+          "hello": "hi there!",
+          "who are you?": "I am SKN clg's ChatBOt",
+          "How are you?": "I am fine",
+          "which type of guest was visited in colloge?":"Yes there is food shope.",
+          "DO student study in abroad?":"yes in USA, JAPAN student study.",
+          "what is tutoring service are avilable?" :"1. There is daily lectures should be conduct 2. specilized professors are availble for each subject.",
+          "Are tutaring service is free?":"There is tutaring service is free for NT and Sc students.",
+          "which grade Accrediated by college?":"The college is Arediated by 'NAAC' with 'A' grade",
+          "What percentage of student live in compus?":"50%to 60% percentage are eligible for compus",
+          "What are the requirements to graduation in four years?":"In every year 60% are compulsory",
+          "Which games are available in college?":"Cricket , football , basketball , kabaddi etc",
+          "What are the opportunities for students?":"Compus placement , coding  competition",
+          "which trainnings organized by TPO?":"тро cell Conclucts. diffent kind of trainning is Aptitude frorining 2) Soft skills trainning3) language Trainning",
+          "Is there counsiling available?":"For educational purpose also Women safely Counciling is availble",
+          "What makes this college special?":"In the college the college campus is the beauty of college and students way to learn new things with Smartness and their placements make special the college.",
+          "How many students apply each year to the college, and how mory are accepted?":"There ore apply 75/- 851. students each year and those student Cut off critena have Selected in which have fit in the those students per year.",
+          "How the computer centre are availble?":"In the college For each deportment 2 computer centre. are available.",
+          "How much time do students spend studying per week?":"Library Open for  24/7",
+          "How is the WiFi on campus?":"Department wise Wi-Fi are available",
+          "Are internships available?":"All type of interest are available",
+          "What is the intake of computer science?":"60",
+          "Intake of mechanical engineering":"120",
+          "Intake of electrical engineering":"60",
+          "Intake of civil engineering":"60",
+          "Intake of ENTC":"60",
+          "Who is the founder of institute?":"Sir M.N.Navoje",
+          "How is the fee structure all 4 year?":"First year 48 thous and college fee second year 48 thousand college fee. Third year 48 Thousand college fee Final Year - 48 Thousand college fee",
+          "which are those taking Curiculam activities in college?":"1) Different type of compitision. ii) Dancing Compition iú) speech iv) Compition codding compition",
+          "What type of career guidance is offered by this college?":"The college organized Very popular Moth Mothlater for student future purpose. They Supporting students.",
+          "Campus area?":"40 acers",
+          "Which scholarships are available in campus?":"TFWS,EBC, PUNJABRAO DESHMUKH",
+          "What are the facilities for non local students":"The hostel, in turn, must offer scopes like hygienic washrooms, clean and tidy rooms, good food, recreational space, and playground for outdoor games along with strict vigilance.",
+          "What is about College security for girls?":"24/7 full security are available in compus",
+          "What makes this college special?":"Spcial for cultural activity placement sports",
+          "How many undergraduate students attend this school?":"3k student",
+          "What is the average class size of introductory courses?":"55*30",
+          "What is the job placement rate?":"4 star",
+          "What are the facilities in college campus":"Facilities. The college is situated in the heart of the city. ... COLLEGE HOSTEL. Separate hostel facilities are provided for Boys and Girls in the college campus. ... TRANSPORT FACILITY. CAFETERIA. LIBRARY & INFORMATION CENTER. ...  COLLEGE CANTEEN. ...  INTERNET CENTRE. TEACHING STAFF.",
+          "which comittee is providwd for women safety in the college?":"savitribai phule comittee",
+          "What percentage of a student’s financial need does the school meet with grants and scholarships?":"The scholarships and grants are free money that you will not have to pay back. The loans must be paid back with interest",
+          "Does the percentage of need that you meet typically shrink after freshman year?":"After freshman year, grants and scholarships may disappear for any number of reasons — some justified, some not.",
+          "What happens to my financial aid package if I take longer than four years to graduate?":"If your financial aid is from the college, there is no universal limit to how long ... towards a four year degree, then you are allowed six years of loans."
+          };
+
+        function talk(){
+          var user = document.getElementById("userBox").value;
+          document.getElementById("userBox").value="";
+          document.getElementById("chatLog").innerHTML +=user+"<br>";
+
+          if(user in know){
+            document.getElementById("chatLog").innerHTML+= know[user]+"<br>";
+          }
+
+          else {
+            document.getElementById("chatLog").innerHTML+="I dont understand.... <br>";
+          }
+        }
+    </script>
+  </head>
+  <body>
+    <div id='form'>
+      <p class="name" id="chatLog"> --ChatBot By Bug Squash Gang --<br> </p>
+
+      <input class="input" id="userBox" type="text" onkeydown="if(event.keyCode==13) {talk()}">
+    </div>
+  </body>
+</html>
